@@ -1,0 +1,22 @@
+{{- define "index" -}}
+<html>
+  <body>
+    <h2>/get</h2>
+    <form method="GET" action="/get">
+      Key:<input name="key" type="text">
+      <input type="submit" value="Submit">
+    </form>
+    <h2>/set</h2>
+    <form method="POST" action="/set">
+      Key:<input name="key" type="text">
+      Val:<input name="val" type="text">
+      <input type="submit" value="Submit">
+    </form>
+    <h2>/increment</h2>
+    <form method="POST" action="/increment">
+      Key:<input name="key" type="text">
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
+{{- end -}}
